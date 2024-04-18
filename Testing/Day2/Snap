@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`decrements count when Decrement button is clicked 1`] = `
+<div>
+  <h1>
+    Count: 
+    -1
+     
+  </h1>
+  <button
+    onClick={[Function]}
+  >
+    Increment
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    decrement
+  </button>
+</div>
+`;
+
+exports[`increments count when Increment button is clicked 1`] = `
+<div>
+  <h1>
+    Count: 
+    1
+     
+  </h1>
+  <button
+    onClick={[Function]}
+  >
+    Increment
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    decrement
+  </button>
+</div>
+`;
+
+exports[`renders Counter component 1`] = `
+<div>
+  <h1>
+    Count: 
+    0
+     
+  </h1>
+  <button
+    onClick={[Function]}
+  >
+    Increment
+  </button>
+  <button
+    onClick={[Function]}
+  >
+    decrement
+  </button>
+</div>
+`;
