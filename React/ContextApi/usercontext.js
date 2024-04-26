@@ -3,7 +3,7 @@ import UserReciever from './UserReciever'
 export const User=createContext();
 const UserContext = () => {
     const userInfo={
-        username:"atul",
+        username:"harsh",
         password:"12345"
     }
   return (
