@@ -1,0 +1,14 @@
+import React from 'react';
+import Typography from '@mui/material/Typography';
+
+const Header = () => {
+  return (
+    <div>
+      <Typography variant="h3" gutterBottom>
+        Your App Title
+      </Typography>
+    </div>
+  );
+};
+
+export default Header;
