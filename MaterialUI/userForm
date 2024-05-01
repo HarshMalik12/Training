@@ -1,0 +1,50 @@
+import React, { useState } from 'react';
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
+
+const UserForm = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+
+  const handleNameChange = (event) => {
+    setName(event.target.value);
+  };
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // You can perform submission logic here, such as sending the data to a server or dispatching an action in Redux
+    console.log('Name:', name);
+    console.log('Email:', email);
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <TextField
+        label="Name"
+        variant="outlined"
+        value={name}
+        onChange={handleNameChange}
+        fullWidth
+        margin="normal"
+      />
+      <TextField
+        label="Email"
+        variant="outlined"
+        value={email}
+        onChange={handleEmailChange}
+        fullWidth
+        margin="normal"
+      />
+      <Button variant="contained" type="submit">
+        Submit
+      </Button>
+    </form>
+- [ ] 
+  );
+};
+
+export default UserForm;
